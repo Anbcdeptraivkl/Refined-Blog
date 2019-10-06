@@ -1,0 +1,326 @@
+/*
+* TABLE OF CONTENT
+*
+** # Default Styles
+*
+** # HEADER
+*
+** # SLIDESHOW
+*
+*
+*/
+
+/**********************\
+    DEFAULT STYLES
+\**********************/
+
+/*
+*
+* - Common Padding Left: 25px
+* - COmmon Padding Right: 25px
+*
+*/
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/**********************\
+    HEADER
+\**********************/
+
+header {
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    height: 50px;
+
+    padding-left: 25px;
+
+    background-color: #2b2b2b;
+}
+    #blog-name {
+        position: absolute;
+        top: 50%;
+
+        transform: translateY(-50%) scaleY(0.9);
+        
+        color: #918b80;
+    }
+
+#side-bar {
+    position: fixed;
+    right: 0;
+
+    z-index: 3;
+
+    overflow: visible;
+    
+    width: 12%;
+    height: 100vh;
+
+    padding-right: 25px;
+
+    background-color: #2b2b2b;
+
+    color: #918b80;
+}
+    #logo {
+        position: absolute;
+        top: 40%;
+        left: 0;
+
+        z-index: 4;
+
+        transform: translateX(-50%);
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+
+        background-color: white;
+        background-size: 100%;
+    }
+
+    #cart {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+
+        transform: scaleY(0.9);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        width: 75px;
+    }
+        #cart img {
+            width: 20px;
+            height: 20px;
+
+            margin-right: 10px;
+        }
+
+    #nav-bar {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+        #nav-bar li {
+            transform: scaleY(0.9);
+
+            padding-bottom: 10px;
+        }
+
+/**********************\
+    SLIDESHOW
+\**********************/
+
+.slideshow-area {
+    top: 50px;
+    
+    width: 88%;
+    height: calc(100vh - 50px);
+
+    background-color: black;
+}
+    .title-block {
+        top: 75px;
+        left: 75px;
+
+        transform: scaleY(0.9);
+
+        width: 33%;
+        height: auto;
+    }
+        .title-block h2 {
+            margin-left: -7.5px;
+            margin-bottom: 75px;
+
+            font-size: 125px;
+            line-height: 85%;
+        }
+
+        .title-block a {
+            color: #4db8ff;
+
+            transition: 0.2s ease-in-out;
+        }
+            .title-block a:hover {
+                color: #26f5b7;
+
+                cursor: pointer;
+            }
+
+    .go-title {
+        top: 45%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+
+        opacity: 0.8;
+    }
+        .go-title h2 {
+            transform: scaleY(1.2);
+            font-size: 175px;
+
+        }
+
+    .go-btn {
+        position: absolute;
+        bottom: 15px;
+        z-index: 4;
+
+        display: block;
+
+        width: 200px;
+        height: 30px;
+
+        border: 3px solid white;
+        border-radius: 10%;
+
+        text-align: center;
+
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+
+        background: transparent;
+
+        transition: 0.2s ease-out;
+    }
+        .go-btn:hover {
+            border-color: #23a6fd;
+
+            background-color: #23a6fd;
+
+            cursor: pointer;
+        }
+
+    .go-explore {
+        left: 30px;
+    }
+
+    .go-build {
+        right: 30px;
+    }
+
+    .discovery-title {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+
+        cursor: pointer;
+    }
+        .discovery-title h2 {
+            width: 60%;
+
+            margin: auto;
+            margin-bottom: 20px;
+            
+            font-size: 60px;
+            color: #26f5b7;
+        }
+
+        .discovery-btn {
+            border-radius: 5%;
+            padding: 10px 20px;
+
+            font-size: 20px;
+            color:black;
+
+            background-color: #26f5b7;
+
+            transition: 0.5s;
+        }
+            .discovery-btn:hover {
+                background-color: white;
+            }
+
+/**********************\
+    MAIN BODY
+\**********************/
+
+main {
+    position: relative;
+
+    top: 50px;
+
+    width: 88%;
+}
+    .blank-space {
+        position: relative;
+
+        height: 100px;
+
+        background-color: #1e1e1e;
+    }
+
+    .article {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width: 100%;
+        height: 380px;
+
+        background-color: #212121;
+    }
+        .thumb {
+            height: 100%;
+        }
+
+        .article-text {
+            height: 100%;
+        }
+
+        .short-flex-part {
+            flex-shrink: 1;
+
+            width: 33%;
+        }
+
+        .long-flex-part {
+            flex-grow: 2;
+        }
+
+/**********************\
+    FOOTER
+\**********************/
+
+footer {
+    position: relative;
+
+    width: 88%;
+    height: 275px;
+
+    padding: 30px;
+    padding-bottom: 15px;
+
+    background-color: #1e1e1e;
+}
+
+
+/**********************\
+    CUSTOMIZATION
+\**********************/

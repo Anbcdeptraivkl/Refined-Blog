@@ -1,0 +1,106 @@
+
+.a-container {
+    position: relative;
+
+    display: block;
+
+    /* Default W-H*/
+    width: 500px;
+    height: 350px;
+
+    background-color: black;
+}
+    .a-slideshow {
+        width: 100%;
+        height: 100%;
+    }
+        .a-slide {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+        }
+            .a-slide img {
+                position: absolute;
+                z-index: 1;
+
+                width: 100%;
+                height: 100%;
+            }
+            
+            .a-slide-text {
+                position: absolute;
+                z-index: 2;
+
+                display: block;
+
+                width: 100%;
+
+                margin-top: 15px;
+                margin-left: 15px;
+
+                text-align: left;
+
+                font-size: 25px;
+                color: white;
+            }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+
+        transform: translateY(-50%) scaleY(0.75);
+
+
+        text-align: center;
+        font-size: 50px;
+        color: white
+    }
+        .a-prev {
+            left: 15px;
+        }
+
+        .a-next {
+            right: 15px;
+        }
+
+    .a-dot-container {
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        z-index: 2;
+
+        display: block;
+
+        transform: translateX(-50%);
+
+        width: auto;
+
+        padding: 5px;
+
+        text-align: center;
+
+        background: transparent;
+    }
+        .a-dot {
+            display: inline-block;
+
+            width: 15px;
+            height: 15px;
+
+            margin-left: 5px;
+            margin-right: 5px;
+
+            border: 2px solid white;
+            border-radius: 50%;
+
+            background: transparent;
+
+            cursor: pointer;
+            transition: 0.2s ease-in;
+        }
+
+        .dot-active {
+            background-color: white;
+        }

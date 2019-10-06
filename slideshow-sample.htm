@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slideshow Prototyping</title>
+
+    <!--CSS Styling-->
+    <link href="src/reset.css" type="text/css" rel="stylesheet">
+    <link href="src/slideshow.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Slideshow (with Container)-->
+    <div class="a-container">
+        <!--Automatic Slide Carousel-->
+        <div class="a-slideshow">
+            <!--Slides-->
+            <div class="a-slide a-fade">
+                <img src="img/black-doggo.jpg">
+                <div class="a-slide-text">Black</div>
+            </div>
+    
+            <div class="a-slide a-fade">
+                <img src="img/cool-doggo.jpg">
+                <div class="a-slide-text">Cool</div>
+            </div>
+    
+            <div class="a-slide a-fade">
+                <img src="img/gold-doggo.jpg">
+                <div class="a-slide-text">Gold</div>
+            </div>
+    
+            <!--Arrows to Prev-Next Slides-->
+            <a class="a-prev arrow" onclick="prevSlide()">&#10094;</a>
+            <a class="a-next arrow" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <!--DOTS for changing slides manually-->
+        <div class="a-dot-container">
+            <span class="a-dot" onclick="currentSlide(0)"></span>
+            <span class="a-dot" onclick="currentSlide(1)"></span>
+            <span class="a-dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- SLideshow Scripts-->
+    <script src="src/slideshow.js"></script>
+</body>
+
+</html>

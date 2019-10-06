@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Refined Blog</title>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--CSS Styling-->
+    <link href="src/reset.css" type="text/css" rel="stylesheet">
+    <!--Custom Slideshow-->
+    <link href="src/slideshow.css" type="text/css" rel="stylesheet">
+    <!--Custom Animations-->
+    <link href="src/animations.css" type="text/css" rel="stylesheet">
+    <!--Main Styling Layout-->
+    <link href="src/main.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <p id="blog-name">ANBC</p>
+        </div>
+    </header>
+
+    <div id="side-bar">
+        <div id="logo"></div>
+
+        <div id="cart">
+            <img src="img/shopping-bag-rectangular-outline.png"></img>
+            <p>CART</p>
+        </div>
+
+        <ul id="nav-bar">
+            <li>HOME</li>
+            <li>DISCOVERY</li>
+            <li>ABOUT</li>
+            <li>BLOG</li>
+        </ul>
+    </div>
+
+    <!--Slideshow (with Container)-->
+    <div class="a-container slideshow-area">
+        <!--Automatic Slide Carousel-->
+        <div class="a-slideshow">
+            <!--Slides-->
+            <div class="a-slide a-fade-in">
+                <img src="img/black-doggo.jpg">
+                <div class="a-slide-text title-block a-slide-l">
+                    <h2 class="title-name">Bla Bla Doggo</h2>
+                    <a class="link-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                </div>
+            </div>
+    
+            <div class="a-slide a-fade-in">
+                <img src="img/cool-doggo.jpg">
+                <div class="a-slide-text go-title">
+                    <h2>Bla Bla Doggo</h2>
+                </div>
+                <button class="go-btn go-explore">EXPLORE</button>
+                <button class="go-btn go-build">BUILD</button>
+            </div>
+    
+            <div class="a-slide a-fade-in">
+                <img src="img/gold-doggo.jpg">
+                <div class="a-slide-text discovery-title a-slide-up-center">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    <button class="discovery-btn">DISCOVERY</button>
+                </div>
+            </div>
+        </div>
+
+        <!--DOTS for changing slides manually-->
+        <div class="a-dot-container">
+            <span class="slide-dot a-dot" onclick="currentSlide(0)"></span>
+            <span class="slide-dot a-dot" onclick="currentSlide(1)"></span>
+            <span class="slide-dot a-dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    
+    <main>
+        <div class="blank-space"></div>
+        
+        <div class="article">
+            <img class="thumb short-flex-part" src="img/smol-kitten-375.jpg">
+
+            <div class="article-text long-flex-part">
+                <div class="article-title">Ala Cat</div>
+                <div class="article-desc">We love Cats</div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="article-text short-flex-part">
+                <div class="article-title">Ala Cat</div>
+                <div class="article-desc">We love Cats</div>
+            </div>
+
+            <img class="thumb long-flex-part" src="img/4-little-kittens-750.jpg">
+        </div>
+
+        <div class="article">
+            <img class="thumb long-flex-part" src="img/4-little-kittens-750.jpg">
+
+            <div class="article-text short-flex-part">
+                <div class="article-title">Ala Cat</div>
+                <div class="article-desc">We love Cats</div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="article-text short-flex-part">
+                <div class="article-title">Ala Cat</div>
+                <div class="article-desc">We love Cats</div>
+            </div>
+
+            <img class="thumb long-flex-part" src="img/4-little-kittens-750.jpg">
+        </div>
+    </main>
+
+    <footer>
+        <div class="upper-footer">
+            <div class="links"></div>
+
+            <div class="newsletter"></div>
+    
+            <div class="social"></div>
+        </div>
+
+        <div class="lower-footer">
+            <div class="policies"></div>
+    
+            <div class="copyright"></div>
+        </div>
+    </footer>
+
+     <!-- SLideshow Scripts-->
+     <script src="src/slideshow.js"></script>
+
+</body>
+
+</html>
