@@ -16,6 +16,18 @@
 
 - Added Formatting, Effects and Animations to Thumbnail Components
 
+- Added Layout and Styling to Article Blocks
+  - Flex Ratio Layout
+  - Images and Texts (Alternating between left and right)
+  - Titles and Read more Link
+
+- Added New Fonts
+  - Source Sans Pro (Body-text Contents)
+  - Playfair display (Headers and Titles)
+  - Lato (Light and Bold)
+
 ### Changed
 
 - Changed the Colors to be more pleasing
+- Changed the Font Units used to rem (root html: 10px) and em
+  - Defined in reset.css
