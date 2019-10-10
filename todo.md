@@ -6,17 +6,17 @@
 
 ### Main
 
-- Articles: Flex
-  - Text Content Descriptions and Linkings
-    - Format and Styling
-    - Layout
-
-### Sizing
-
 ### Footer
   
-- Links
+- Links Lists
+
+- Input Newsetlers
+
+- Social Media Links Imgs
+
 - Flex Layout
+- Styling
+- Layouts
 
 ===========================================
 

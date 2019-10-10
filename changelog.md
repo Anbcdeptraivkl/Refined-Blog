@@ -21,9 +21,10 @@
   - Images and Texts (Alternating between left and right)
   - Titles and Read more Link
 
+- Added Styling and Scaling to all Article Texts
+
 - Added New Fonts
   - Source Sans Pro (Body-text Contents)
-  - Playfair display (Headers and Titles)
   - Lato (Light and Bold)
 
 ### Changed
@@ -31,3 +32,8 @@
 - Changed the Colors to be more pleasing
 - Changed the Font Units used to rem (root html: 10px) and em
   - Defined in reset.css
+
+## Removed
+
+- Removed the slideshow sample files
+- Removed Borders from default Buttons
