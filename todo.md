@@ -4,20 +4,6 @@
 
 ## WORKING ON
 
-### Main
-
-### Footer
-  
-- Links Lists
-
-- Input Newsetlers
-
-- Social Media Links Imgs
-
-- Flex Layout
-- Styling
-- Layouts
-
 ===========================================
 
 ## PLAN

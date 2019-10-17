@@ -4,6 +4,9 @@
 
 ## [Unreleased]
 
+
+## [0.1.0] - 17/10/2019
+
 ### Added
 
 - Added Main Thumbnail Image Slider (Carousel Style)
@@ -27,13 +30,25 @@
   - Source Sans Pro (Body-text Contents)
   - Lato (Light and Bold)
 
+- Added Footer Contents and Styling
+  - Flex Display (for both containers and contents)
+  - Newsletter Form (Styled with div and span)
+  - Social Media Links
+  - Flex Lists
+  - COpyrights
+
+- Added pointer and hover effects for all the links and functional buttons
+
 ### Changed
 
 - Changed the Colors to be more pleasing
 - Changed the Font Units used to rem (root html: 10px) and em
   - Defined in reset.css
 
+- Reduced the Fonts size for the Navigation bar
+
 ## Removed
 
 - Removed the slideshow sample files
 - Removed Borders from default Buttons
+- Removed the little cart button that looked out of place
